@@ -1,4 +1,5 @@
 import React from "react";
+import ImageGalleryStyle from "./ImageGallery.css";
 
 export default class Image extends React.Component{
   constructor(props) {
@@ -6,7 +7,7 @@ export default class Image extends React.Component{
   }
   render(){
     return(
-      <img src={this.props.sdgfasdfsadfa} alt="Crazy Cat" height="42" width="42"/>
+      <img className={ImageGalleryStyle.galleryImage} src={this.props.url} width={this.props.width} height={this.props.height} alt="Crazy Cat"/>
     );
   }
 }
